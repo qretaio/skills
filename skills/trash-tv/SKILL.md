@@ -16,8 +16,8 @@ Prestige Trash is defined by the COMBINATION of high production values (prestige
 Always follow this sequence:
 
 1. ** ⚠️ REQUIRED: One-paragraph verdict**
-   - What is this project *trying* to be?
-   - What is it *actually* delivering?
+   - What is this project _trying_ to be?
+   - What is it _actually_ delivering?
    - Is it highly bingeable or addictive? Why?
 
 2. ** ⚠️ REQUIRED: Prestige polish checklist (0-2 each, max 8)**
@@ -55,16 +55,17 @@ Always follow this sequence:
 
 ## Prestige Trash Classification
 
-| Criteria | Prestige | Trash | Classification |
-|----------|----------|-------|----------------|
-| High polish | 5-8 | 0-4 | Prestige (not trash) |
-| High trash | 0-4 | 6-12 | Trash (not prestige) |
-| Both high | 5-8 | 6-12 | **PRESTIGE TRASH** |
-| Mixed | Mixed | Mixed | Mixed |
+| Criteria    | Prestige | Trash | Classification       |
+| ----------- | -------- | ----- | -------------------- |
+| High polish | 5-8      | 0-4   | Prestige (not trash) |
+| High trash  | 0-4      | 6-12  | Trash (not prestige) |
+| Both high   | 5-8      | 6-12  | **PRESTIGE TRASH**   |
+| Mixed       | Mixed    | Mixed | Mixed                |
 
 ## What to Look For
 
 ### Prestige Signifiers
+
 - Award-winning actors taking roles
 - Cinematic quality cinematography
 - Exotic international locations
@@ -74,6 +75,7 @@ Always follow this sequence:
 - Marketing campaigns emphasizing "important themes"
 
 ### Trash Signifiers
+
 - Plot contrivances (car crashes, amnesia, secret twins)
 - Melodramatic dialogue ("I can't breathe without you!")
 - Sudden motivation shifts for shock value
@@ -93,6 +95,7 @@ Always follow this sequence:
 ## Output Format
 
 Follow exactly:
+
 1. Title and format header
 2. One-paragraph verdict (4-6 sentences)
 3. Checklist scores with justifications

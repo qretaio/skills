@@ -10,12 +10,14 @@ Comprehensive Dioxus 0.7 framework expertise for building modern fullstack appli
 ## Core Dioxus 0.7 Concepts
 
 ### Essential References
+
 - **Official Docs**: https://dioxuslabs.com/docs/0.7/dioxus/
 - **Fullstack Guide**: https://dioxuslabs.com/docs/0.7/fullstack/
 - **CLI Reference**: https://dioxuslabs.com/docs/0.7/cli/
 - **Awesome Dioxus**: https://dioxuslabs.com/awesome/
 
 ### Project Structure
+
 ```
 src/
 ├── main.rs           # Main application entry
@@ -29,6 +31,7 @@ src/
 ```
 
 ### Key Dependencies (Dioxus 0.7)
+
 ```bash
 # Use dx add to install dependencies:
 dx add dioxus --features fullstack
@@ -45,6 +48,7 @@ dx add dioxus-logger  # New logging system
 ## Development Patterns
 
 ### Component Architecture
+
 - Use functional components with hooks (`use_signal`, `use_effect`)
 - Implement proper prop typing with Rust structs
 - Leverage `children` for composition
@@ -52,12 +56,14 @@ dx add dioxus-logger  # New logging system
 - New: `fn Component(cx: Scope) -> Element` syntax
 
 ### State Management (0.7 Updates)
+
 - Local state: `use_signal` hook (preferred over `use_state`)
 - Global state: Copy/Clone signals or context providers
 - Server state: Use server functions with new `#[server]` macro
 - Signals are now Copy and Clone by default
 
 ### Routing (0.7 Rewrite)
+
 ```rust
 use dioxus_router::prelude::*;
 
@@ -85,6 +91,7 @@ fn App(cx: Scope) -> Element {
 ```
 
 ### Data Fetching (0.7 Server Functions)
+
 ```rust
 use dioxus::prelude::*;
 
@@ -115,6 +122,7 @@ fn UserComponent(cx: Scope, id: u32) -> Element {
 ```
 
 ### Styling (0.7 Enhancements)
+
 - CSS-in-Rust with `dioxus-css` or `dioxus-free-components`
 - Tailwind CSS integration with `dioxus-tailwind`
 - Scoped CSS with CSS modules support
@@ -124,6 +132,7 @@ fn UserComponent(cx: Scope, id: u32) -> Element {
 ## Best Practices
 
 ### Performance (0.7 Features)
+
 - Use `use_memo` for expensive computations
 - Implement proper key props for lists
 - Lazy load routes and components with new suspense boundaries
@@ -131,6 +140,7 @@ fn UserComponent(cx: Scope, id: u32) -> Element {
 - Use `use_callback` for stable event handlers
 
 ### Error Handling
+
 - Use `Result` types throughout
 - Implement proper error boundaries with `ErrorBoundary`
 - Server function error propagation
@@ -138,6 +148,7 @@ fn UserComponent(cx: Scope, id: u32) -> Element {
 - New: Global error handling with `use_error_boundary`
 
 ### Testing
+
 - Component unit tests with `dioxus-testing`
 - Integration tests for fullstack
 - E2E testing with Playwright or similar
@@ -145,6 +156,7 @@ fn UserComponent(cx: Scope, id: u32) -> Element {
 - New: Headless rendering for tests
 
 ### Security
+
 - Input validation and sanitization
 - CSRF protection for server functions
 - Proper authentication/authorization
@@ -154,6 +166,7 @@ fn UserComponent(cx: Scope, id: u32) -> Element {
 ## Tooling & Workflow
 
 ### Development Commands (Dioxus CLI 0.7)
+
 ```bash
 # New project with templates
 dx create my-app --template fullstack
@@ -184,6 +197,7 @@ dx check
 ```
 
 ### IDE Setup
+
 - Use rust-analyzer with Dioxus support
 - Configure tailwind CSS class completion
 - Set up proper TOML language server
@@ -191,6 +205,7 @@ dx check
 - New: Integrated debugging support
 
 ### Common Integrations (0.7 Ready)
+
 - **Database**: SQLx for async DB operations with connection pooling
 - **HTTP**: reqwest for client requests
 - **Authentication**: Auth0 integration via server functions
@@ -201,6 +216,7 @@ dx check
 ## Common Patterns
 
 ### Form Handling (0.7 Signals)
+
 ```rust
 #[component]
 fn LoginForm(cx: Scope) -> Element {
@@ -237,6 +253,7 @@ fn LoginForm(cx: Scope) -> Element {
 ```
 
 ### API Integration (0.7 Server Functions)
+
 ```rust
 #[server]
 async fn create_post(title: String, content: String) -> Result<Post, ServerFnError> {
@@ -290,6 +307,7 @@ fn PostForm(cx: Scope) -> Element {
 ```
 
 ### Custom Hooks (0.7 Patterns)
+
 ```rust
 #[hook]
 pub fn use_api<T: Clone + 'static>(

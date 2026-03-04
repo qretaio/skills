@@ -1,6 +1,7 @@
 # Dioxus 0.7 Quick Reference
 
 ## DX CLI Commands
+
 ```bash
 # Create project
 dx create <name> --template <fullstack|desktop|mobile|web>
@@ -23,6 +24,7 @@ dx test --release
 ```
 
 ## Component Syntax
+
 ```rust
 use dioxus::prelude::*;
 
@@ -35,6 +37,7 @@ fn ComponentName(cx: Scope, props: PropsType) -> Element {
 ```
 
 ## Hooks
+
 - `use_signal(cx, || initial)` - Local state
 - `use_resource(cx, || async move { ... })` - Async data
 - `use_memo(cx, (deps,), |(deps,)| compute(deps))` - Computed values
@@ -42,6 +45,7 @@ fn ComponentName(cx: Scope, props: PropsType) -> Element {
 - `use_coroutine(cx, |rx| async move { ... })` - State machines
 
 ## Server Functions
+
 ```rust
 #[server]
 async fn function_name(params: Type) -> Result<Return, ServerFnError> {
@@ -50,6 +54,7 @@ async fn function_name(params: Type) -> Result<Return, ServerFnError> {
 ```
 
 ## Routing
+
 ```rust
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
@@ -65,6 +70,7 @@ enum Route {
 ```
 
 ## Common Patterns
+
 - Signal reactivity: `let value = signal.read();`
 - Signal mutation: `signal.write().push(new_val);`
 - Event handlers: `onclick: move |_| handler()`
